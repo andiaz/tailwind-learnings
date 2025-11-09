@@ -1,182 +1,432 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body class="bg-white">
-    <header class="relative md:min-h-80 min-h-[200px] flex items-center justify-center bg-cover md:bg-cover bg-center md:bg-center bg-no-repeat" style="background-image: url('https://hagadalensvandrarhem.se/wp-content/uploads/2019/02/host_vandrarhemmet.jpg?width=2080&slimmage=true');">    
-        <!-- Navbar Section -->
-        <nav class="top-[70px] z-10 bg-white rounded-md p-4 shadow-lg hidden md:flex">
-            <div class="container mx-auto flex flex-col justify-center items-center">
-                <img src="https://hagadalensvandrarhem.se/wp-content/uploads/2019/02/Hagadalen_logo.png" alt="Logo" class="w-80 mr-4">
-                <ul class="flex space-x-4 mt-2 p-2 rounded">
-                    <li><a href="#" class="p-4 text-green-700 hover:text-green-900 hover:bg-green-50 rounded-s">Hem</a></li>  
-                    <li><a href="#" class="p-4 text-green-700 hover:text-green-900 hover:bg-green-50 rounded-s">Boka rum</a></li>
-                    <li><a href="#" class="p-4 text-green-700 hover:text-green-900 hover:bg-green-50 rounded-s">Våra rum</a></li>
-                    <li><a href="#" class="p-4 text-green-700 hover:text-green-900 hover:bg-green-50 rounded-s">Bilder</a></li>
-                    <li><a href="#" class="p-4 text-green-700 hover:text-green-900 hover:bg-green-50 rounded-s">Villkor & Frågor</a></li>
-                    <li><a href="#" class="p-4 text-green-700 hover:text-green-900 hover:bg-green-50 rounded-s">Om oss</a></li>
-                </ul>
-            </div>
-        </nav>
-    
-        <!-- Mobile Navbar -->
-        <nav class="fixed top-0 left-0 right-0 z-20 bg-white p-4 shadow-lg md:hidden">
-            <div class="container mx-auto flex justify-between items-center">
-                <img src="https://hagadalensvandrarhem.se/wp-content/uploads/2019/02/Hagadalen_logo.png" alt="Logo" class="w-56">
-                <button id="menu-button" class="text-green-700 focus:outline-none">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-            <div id="menu" class="hidden flex flex-col items-center mt-4 space-y-4">
-                <a href="#" class="text-green-700 hover:text-green-900 hover:underline">Hem</a>
-                <a href="#" class="text-green-700 hover:text-green-900 hover:underline">Boka rum</a>
-                <a href="#" class="text-green-700 hover:text-green-900 hover:underline">Våra rum</a>
-                <a href="#" class="text-green-700 hover:text-green-900 hover:underline">Bilder</a>
-                <a href="#" class="text-green-700 hover:text-green-900 hover:underline">Villkor & Frågor</a>
-                <a href="#" class="text-green-700 hover:text-green-900 hover:underline">Om oss</a>
-            </div>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white">
+    <header
+      class="relative md:min-h-80 min-h-[200px] flex items-center justify-center bg-cover md:bg-cover bg-center md:bg-center bg-no-repeat"
+      style="background-image: url('./img/host_vandrarhemmet.jpg')"
+    >
+      <!-- Navbar Section -->
+      <nav
+        class="top-[70px] z-10 bg-white rounded-md p-4 shadow-lg hidden md:flex"
+      >
+        <div
+          class="container mx-auto flex flex-col justify-center items-center"
+        >
+          <img
+            src="./img/Hagadalen_logo_v2-2.png"
+            alt="Logo"
+            class="w-[400px] mr-4"
+          />
+          <ul class="flex space-x-4 mt-2 p-2 rounded">
+            <li>
+              <a
+                href="#"
+                class="p-4 text-green-700 hover:text-green-900 hover:bg-green-50 rounded-s"
+                >Hem</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="p-4 text-green-700 hover:text-green-900 hover:bg-green-50 rounded-s"
+                >Boka rum</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="p-4 text-green-700 hover:text-green-900 hover:bg-green-50 rounded-s"
+                >Våra rum</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="p-4 text-green-700 hover:text-green-900 hover:bg-green-50 rounded-s"
+                >Bilder</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="p-4 text-green-700 hover:text-green-900 hover:bg-green-50 rounded-s"
+                >Villkor & Frågor</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="p-4 text-green-700 hover:text-green-900 hover:bg-green-50 rounded-s"
+                >Om oss</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Mobile Navbar -->
+      <nav
+        class="fixed top-0 left-0 right-0 z-20 bg-white p-4 shadow-lg md:hidden"
+      >
+        <div class="container mx-auto flex justify-between items-center">
+          <img src="./img/Hagadalen_logo_v2-2.png" alt="Logo" class="w-56" />
+          <button id="menu-button" class="text-green-700 focus:outline-none">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div id="menu" class="hidden flex flex-col items-center mt-4 space-y-4">
+          <a
+            href="#"
+            class="text-green-700 hover:text-green-900 hover:underline"
+            >Hem</a
+          >
+          <a
+            href="#"
+            class="text-green-700 hover:text-green-900 hover:underline"
+            >Boka rum</a
+          >
+          <a
+            href="#"
+            class="text-green-700 hover:text-green-900 hover:underline"
+            >Våra rum</a
+          >
+          <a
+            href="#"
+            class="text-green-700 hover:text-green-900 hover:underline"
+            >Bilder</a
+          >
+          <a
+            href="#"
+            class="text-green-700 hover:text-green-900 hover:underline"
+            >Villkor & Frågor</a
+          >
+          <a
+            href="#"
+            class="text-green-700 hover:text-green-900 hover:underline"
+            >Om oss</a
+          >
+        </div>
+      </nav>
     </header>
-    
+
     <!-- Main Content example -->
     <main class="bg-gray-800">
-        <div class="container mx-auto">
-            <div class="mx-auto max-w-6xl bg-gray-800 p-4">
-
-                <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6 m-4">
-                    <div class="rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 flex flex-col  dark:bg-gray-800">
-                        <a href="#">
-                        <img class="rounded-t-lg w-full h-48 object-cover" src="https://hagadalensvandrarhem.se/wp-content/uploads/2019/07/rumopriser1.jpg?width=320&slimmage=true" alt="" />
-                        </a>
-                        <div class="p-5 flex flex-col h-full">
-                            <a href="#">
-                                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Boka rum</h2>
-                            </a>
-                            <p class="h-full mb-3 font-normal text-gray-700 dark:text-gray-400">Ange önskade datum för din vistelse i vår bokningskalender för att se vilka rum som finns tillgängliga. Boka och betala via Payson (säker betalning).
-                                Vi nås på telefon
-                                070-646 21 20
-                                om du har frågor eller funderingar.</p>
-                            <a href="#" class="inline-flex justify-center items-center w-full rounded-lg bg-green-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-blue-800">
-                                Boka rum
-                                <svg class="ms-2 h-3.5 w-3.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 flex flex-col dark:bg-gray-800">
-                        <a href="#">
-                        <img class="rounded-t-lg w-full h-48 object-cover" src="https://hagadalensvandrarhem.se/wp-content/uploads/2019/07/Kenneths-rum-4.jpg?width=480&slimmage=true alt="" />
-                        </a>
-                        <div class="p-5 flex flex-col h-full">
-                            <a href="#">
-                                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Våra rum</h2>
-                            </a>
-                            <p class="h-full mb-3 font-normal text-gray-700 dark:text-gray-400">Våra 4 tvåbäddsrum har generösa ytor och är personligt utformade, har olika storlek och utseende. De är ljusa, rökfria och fräscha. Rummen har två resårsängar (90-cm), 5 cm tjocka bäddmadrasser, täcken och två kuddar. Sitthörna finns i alla rum. Sängarna är färdigbäddade med lakan. Handdukar ingår.</p>
-                            <a href="#" class="inline-flex justify-center items-center w-full rounded-lg bg-green-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-blue-800">
-                                Våra rum
-                                <svg class="ms-2 h-3.5 w-3.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 flex flex-col dark:bg-gray-800">
-                        <a href="#">
-                        <img class="rounded-t-lg w-full h-48 object-cover" src="https://hagadalensvandrarhem.se/wp-content/uploads/2019/07/Ingers-rum-8.jpg" alt="" />
-                        </a>
-                        <div class="p-5 flex flex-col h-full">
-                            <a href="#">
-                                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Om oss</h2>
-                            </a>
-                            <p class="h-full mb-3 font-normal text-gray-700 dark:text-gray-400"><strong>MITT I NATUREN - NÄRA STAN</strong>
-                            Hågadalens Hostel & Vandrarhem är ett utmärkt alternativ för dig som söker ett ombonat och bekvämt boende till förmånligt pris – med närhet till såväl naturen som centrala Uppsala. Du tar enkelt buss 11 till city (mot riktning Fyrislund) från närliggande hållplats Lurbo Bro.</p>
-                            <a href="#" class="inline-flex justify-center items-center w-full rounded-lg bg-green-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-blue-800">
-                                Om oss
-                                <svg class="ms-2 h-3.5 w-3.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- End of Main Content example -->
-    
-    <footer class="bg-white">
-        <div class="container mx-auto py-6 lg:py-8">
-            <div class="flex justify-center">
-                <div class="grid grid-cols-1 gap-8 sm:gap-4 sm:grid-cols-3">
-                    <div>
-                      <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Välj språk</h2>
-                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                          <li class="mb-4">
-                              <a href="https://flowbite.com/" class="hover:underline flex items-center gap-2"><img class="object-contain" src="https://hagadalensvandrarhem.se/wp-content/plugins/sitepress-multilingual-cms/res/flags/sv.png" alt=""> Svenska</a>
-                          </li>
-                          <li>
-                              <a href="https://flowbite.com/" class="hover:underline flex items-center gap-2"><img class="object-contain" src="https://hagadalensvandrarhem.se/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" alt=""> Engelska</a>
-                          </li>
-                      </ul>
-                    </div>
-                    <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Kontakta oss</h2>
-                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                            <li class="mb-4">
-                                <a href="https://github.com/themesberg/flowbite" class="hover:underline flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                        stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-                                    </svg>
-                                    +467312456789</a>
-                            </li>
-                            <li>
-                                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline flex items-center gap-2"><svg
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                        stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                                    </svg>testmail@test.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Hitta hit</h2>
-                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                            <li class="mb-4">
-                                <a href="#" class="hover:underline flex items-center gap-2">
-                                    Vårdsätravägen 71, 756 55 Uppsala</a>
-                            </li>
-                            <li>
-                                <a href="#" class="hover:underline"><img class="rounded-md"
-                                        src="https://hagadalensvandrarhem.se/wp-content/uploads/2019/08/Capture-300x132.png" alt=""></a>
-                            </li>
-                        </ul>
-                    </div>
+      <div class="container mx-auto">
+        <div class="mx-auto max-w-6xl bg-gray-800 p-4">
+          <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6 m-4">
+            <div
+              class="rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 flex flex-col dark:bg-gray-800"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg w-full h-48 object-cover"
+                  src="./img/rumopriser1.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5 flex flex-col h-full">
+                <a href="#">
+                  <h2
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Boka rum
+                  </h2>
+                </a>
+                <p
+                  class="h-full mb-3 font-normal text-gray-700 dark:text-gray-400"
+                >
+                  Ange önskade datum för din vistelse i vår bokningskalender för
+                  att se vilka rum som finns tillgängliga. Där kan du själv boka
+                  rum direkt. Det går också bra att ringa oss på
+                  <br />
+                  070-646 21 20<br />
+                  för hjälp med bokningen eller om du har frågor och
+                  funderingar.
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex justify-center items-center w-full rounded-lg bg-green-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-blue-800"
+                >
+                  Boka rum
+                  <svg
+                    class="ms-2 h-3.5 w-3.5 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
               </div>
+            </div>
+
+            <div
+              class="rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 flex flex-col dark:bg-gray-800"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg w-full h-48 object-cover"
+                  src="./img/Kenneths-rum-4.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5 flex flex-col h-full">
+                <a href="#">
+                  <h2
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Våra rum
+                  </h2>
+                </a>
+                <p
+                  class="h-full mb-3 font-normal text-gray-700 dark:text-gray-400"
+                >
+                  Våra 4 tvåbäddsrum har generösa ytor och är personligt
+                  utformade, har olika storlek och utseende. De är ljusa,
+                  rökfria och fräscha. Rummen har två resårsängar (90-cm), 5 cm
+                  tjocka bäddmadrasser, täcken och två kuddar. Sitthörna finns i
+                  alla rum. Sängarna är färdigbäddade med lakan. Handdukar
+                  ingår.
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex justify-center items-center w-full rounded-lg bg-green-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-blue-800"
+                >
+                  Våra rum
+                  <svg
+                    class="ms-2 h-3.5 w-3.5 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 flex flex-col dark:bg-gray-800"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg w-full h-48 object-cover"
+                  src="./img/om-oss-v2.png"
+                  alt=""
+                />
+              </a>
+              <div class="p-5 flex flex-col h-full">
+                <a href="#">
+                  <h2
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Om oss
+                  </h2>
+                </a>
+                <p
+                  class="h-full mb-3 font-normal text-gray-700 dark:text-gray-400"
+                >
+                  <strong>MITT I NATUREN - NÄRA STAN</strong> Hågadalens 4 Rum &
+                  Kök, tidigare Hågadalens Hostel & Vandrarhem, är ett utmärkt
+                  alternativ för dig som vill bo ombonat och bekvämt med närhet
+                  till såväl naturen som centrala Uppsala. Du tar enkelt buss 11
+                  till city (mot riktning Fyrislund) från närliggande hållplats
+                  Lurbo bro.
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex justify-center items-center w-full rounded-lg bg-green-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-blue-800"
+                >
+                  Om oss
+                  <svg
+                    class="ms-2 h-3.5 w-3.5 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-    </footer>    
-    
+      </div>
+    </main>
+    <!-- End of Main Content example -->
+
+    <footer class="bg-white">
+      <div class="container mx-auto py-6 lg:py-8">
+        <div class="flex justify-center">
+          <div class="grid grid-cols-1 gap-8 sm:gap-4 sm:grid-cols-3">
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Välj språk
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a
+                    href="https://flowbite.com/"
+                    class="hover:underline flex items-center gap-2"
+                    ><img
+                      class="object-contain"
+                      src="https://hagadalensvandrarhem.se/wp-content/plugins/sitepress-multilingual-cms/res/flags/sv.png"
+                      alt=""
+                    />
+                    Svenska</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://flowbite.com/"
+                    class="hover:underline flex items-center gap-2"
+                    ><img
+                      class="object-contain"
+                      src="https://hagadalensvandrarhem.se/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png"
+                      alt=""
+                    />
+                    Engelska</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Kontakta oss
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a
+                    href="tel:+46706462120"
+                    class="hover:underline flex items-center gap-2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                      />
+                    </svg>
+                    +46706462120</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:info@hagadalensvandrarhem.se"
+                    class="hover:underline flex items-center gap-2"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                      /></svg
+                    >info@hagadalensvandrarhem.se</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Hitta hit
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a
+                    href="https://maps.google.se/maps?q=V%C3%A5rds%C3%A4trav%C3%A4gen+71,+756+55+Uppsala&hl=sv&ie=UTF8&sll=59.833279,17.658447&sspn=0.31365,1.056747&hnear=V%C3%A5rds%C3%A4trav%C3%A4gen+71,+756+46+Uppsala,+Uppsala+l%C3%A4n&t=m&z=16&iwloc=A"
+                    class="hover:underline flex items-center gap-2"
+                    target="_blank"
+                  >
+                    Vårdsätravägen 71, 756 55 Uppsala</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://maps.google.se/maps?q=V%C3%A5rds%C3%A4trav%C3%A4gen+71,+756+55+Uppsala&hl=sv&ie=UTF8&sll=59.833279,17.658447&sspn=0.31365,1.056747&hnear=V%C3%A5rds%C3%A4trav%C3%A4gen+71,+756+46+Uppsala,+Uppsala+l%C3%A4n&t=m&z=16&iwloc=A"
+                    class="hover:underline"
+                    target="_blank"
+                    ><img
+                      class="rounded-md"
+                      src="./img/Capture-300x132.png"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script>
-        document.getElementById('menu-button').addEventListener('click', function() {
-            var menu = document.getElementById('menu');
-            if (menu.classList.contains('hidden')) {
-                menu.classList.remove('hidden');
-            } else {
-                menu.classList.add('hidden');
-            }
+      document
+        .getElementById('menu-button')
+        .addEventListener('click', function () {
+          var menu = document.getElementById('menu');
+          if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+          } else {
+            menu.classList.add('hidden');
+          }
         });
     </script>
-        
-</body>
+  </body>
 </html>
